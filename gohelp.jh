@@ -1,0 +1,42 @@
+entity Request {
+    text String
+}
+
+entity RequestType {
+	name String
+}
+
+entity GeoJsonPoint {
+	x Double
+    y Double
+}
+
+entity Proposal {
+    text String
+}
+
+relationship OneToOne {
+	Request{user(login)} to User,
+	Request{location} to GeoJsonPoint,
+
+	Proposal{user(login)} to User
+}
+
+relationship ManyToOne {
+	Request{type} to RequestType,
+	Proposal{request} to Request
+}
+
+
+// Set pagination options
+paginate Request, Proposal with infinite-scroll
+paginate RequestType, GeoJsonPoint with pagination
+
+// Use Data Transfert Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
