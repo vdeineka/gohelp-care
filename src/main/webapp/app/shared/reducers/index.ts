@@ -12,6 +12,22 @@ import activate, { ActivateState } from 'app/modules/account/activate/activate.r
 import password, { PasswordState } from 'app/modules/account/password/password.reducer';
 import settings, { SettingsState } from 'app/modules/account/settings/settings.reducer';
 import passwordReset, { PasswordResetState } from 'app/modules/account/password-reset/password-reset.reducer';
+// prettier-ignore
+import request, {
+  RequestState
+} from 'app/entities/request/request.reducer';
+// prettier-ignore
+import requestType, {
+  RequestTypeState
+} from 'app/entities/request-type/request-type.reducer';
+// prettier-ignore
+import geoJsonPoint, {
+  GeoJsonPointState
+} from 'app/entities/geo-json-point/geo-json-point.reducer';
+// prettier-ignore
+import proposal, {
+  ProposalState
+} from 'app/entities/proposal/proposal.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 export interface IRootState {
@@ -25,6 +41,10 @@ export interface IRootState {
   readonly passwordReset: PasswordResetState;
   readonly password: PasswordState;
   readonly settings: SettingsState;
+  readonly request: RequestState;
+  readonly requestType: RequestTypeState;
+  readonly geoJsonPoint: GeoJsonPointState;
+  readonly proposal: ProposalState;
   /* jhipster-needle-add-reducer-type - JHipster will add reducer type here */
   readonly loadingBar: any;
 }
@@ -40,6 +60,10 @@ const rootReducer = combineReducers<IRootState>({
   passwordReset,
   password,
   settings,
+  request,
+  requestType,
+  geoJsonPoint,
+  proposal,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar
 });

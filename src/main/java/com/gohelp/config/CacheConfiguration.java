@@ -40,6 +40,10 @@ public class CacheConfiguration {
             createCache(cm, com.gohelp.domain.User.class.getName());
             createCache(cm, com.gohelp.domain.Authority.class.getName());
             createCache(cm, com.gohelp.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.gohelp.domain.Request.class.getName());
+            createCache(cm, com.gohelp.domain.RequestType.class.getName());
+            createCache(cm, com.gohelp.domain.GeoJsonPoint.class.getName());
+            createCache(cm, com.gohelp.domain.Proposal.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
