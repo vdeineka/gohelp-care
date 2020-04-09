@@ -1,0 +1,23 @@
+{
+  "gohelpApp": {
+    "geoJsonPoint": {
+      "home": {
+        "title": "Geo Json Points",
+        "createLabel": "Create a new Geo Json Point",
+        "createOrEditLabel": "Create or edit a Geo Json Point",
+        "notFound": "No Geo Json Points found"
+      },
+      "created": "A new Geo Json Point is created with identifier {{ param }}",
+      "updated": "A Geo Json Point is updated with identifier {{ param }}",
+      "deleted": "A Geo Json Point is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Geo Json Point {{ id }}?"
+      },
+      "detail": {
+        "title": "Geo Json Point"
+      },
+      "x": "X",
+      "y": "Y"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "name": "GeoJsonPoint",
+    "fields": [
+        {
+            "fieldName": "x",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "y",
+            "fieldType": "Double"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200409160500",
+    "entityTableName": "geo_json_point",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
